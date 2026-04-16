@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css"
+    integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.js"
+    integrity="sha512-QTYXYEniHb1m0ZKtSyfpmw40uH9vPfV07vxsv/plIRMEiON4yOp2qoZiv/FTqFIOym4bdQ4+p9RtHaCMC0ApRw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-go.min.js"
+    integrity="sha512-19J5mMl3tkNptyMFkeBLHmdNi6f6l7quYk69/kiTgk4UNmxRCkdVCMkqPvoAQ7CE6fZQzz7Hp8VECXDpi7g5mw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-java.min.js"
+    integrity="sha512-BEknrL2CnuVpqnSTwO4a9y9uW5bQ/nabkJeahZ5seRXvmzAMq59Ja9OxZe3lVGrnKEcVlamL4nUBl03wzPM/nA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-typescript.min.js"
+    integrity="sha512-Hb168WC7SiCJ1GlGPHBb5ol0ResC6n5wu+5V8FTT5inC5ajLgBSm2hpQBvDq1YG2KqXr7UanlfQqRy6VEb1/kQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-rust.min.js"
+    integrity="sha512-IEKBKuVt5ZJgNK9ExBPa4m5KkTKhOgxJ+22LHUEOkKO/i/A4GLgbUApFf3LdsjXEoSdwOZOiUdWBxp/zDt1+fg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-python.min.js"
+    integrity="sha512-3qtI9+9JXi658yli19POddU1RouYtkTEhTHo6X5ilOvMiDfNvo6GIS6k2Ukrsx8MyaKSXeVrnIWeyH8G5EOyIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php.min.js"
+    integrity="sha512-6UGCfZS8v5U+CkSBhDy+0cA3hHrcEIlIy2++BAjetYt+pnKGWGzcn+Pynk41SIiyV2Oj0IBOLqWCKS3Oa+v/Aw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-objectivec.min.js"
+    integrity="sha512-4ow3l0znDfgPn89+C0d37mfdW5qzEfZq/V63cmhl3Nty+yCkRRtveMBvVdi3NoUklH/rWV5dlObGNB19cF0bIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Code Switcher</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__inner-left">
+        <h1 class="header__title">CodeSwitch</h1>
+      </div>
+      <nav class="header__nav">
+        <a href="#" class="header__link">About</a>
+        <a href="#" class="header__link">Blog</a>
+        <a href="#" class="header__link">Pricing</a>
+        <a href="#" class="header__link">Changelog</a>
+        <a href="#" class="header__link">Templates</a>
+        <a href="#" class="header__link">Docs</a>
+        <a href="#" class="header__link">Discord</a>
+      </nav>
+      <div class="header__auth">
+        <button class="header__button header__button--create">Create Account</button>
+        <button class="header__button header__button--sign-in">Sign In</button>
+      </div>
+      <div class="mobile-menu-icon">
+        <i class="fa-solid fa-bars-staggered">
+          <nav class="mobile__nav">
+            <a href="#" class="mobile__link">About</a>
+            <a href="#" class="mobile__link">Blog</a>
+            <a href="#" class="mobile__link">Pricing<a>
+                <a href="#" class="mobile__link">Changelog</a>
+                <a href="#" class="mobile__link">Templates</a>
+                <a href="#" class="mobile__link">Docs</a>
+                <a href="#" class="mobile__link">Discord</a>
+                <button class="header__button mobile__button--create">Create Account</button>
+                <button class="header__button mobile__button--sign-in">Sign In</button>
+          </nav>
+        </i>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2 class="container__title">Any language, any framework, always secure</h2>
+    <p class="container__description">Integrate authentication into your APIs effortlessly with just a few lines of
+      code. We offer SDKs for various languages and frameworks, alongside an intuitive REST API with a public OpenAPI
+      specification.</p>
+    <div class="container__buttons">
+      <button class="container__button container__button--get-started">Get Started</button><button
+        class="container__button container__button--view-docs"><span>Visit the docs </span><i
+          class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="code-container-bg-blur"></div>
+
+    <div class="code-container">
+      <button class="code-container__tab code-container__tab--active" data-language="rust">
+        <i class="fa-brands fa-rust code-container__icon"></i>Rust</button>
+
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,137 @@
+@import url("fonts.css");
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Geist Sans", sans-serif;
+  background: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  padding: 2px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #323232;
+  background: linear-gradient(180deg, #000000, #181818);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+
+@media (min-width: 500px) {
+  .header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+.header__inner-left {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 24px;
+  background: -webkit-linear-gradient(280deg, #ffffff, #4d4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.header__nav.active {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 2rem;
+}
+
+.header__link {
+  color: #8a8a8a;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__link:hover {
+  color: #ffffff;
+}
+
+.header__auth {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  padding: 20px 0px;
+}
+
+.header__button {
+  background-color: transparent;
+  font-family: "Geist Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #525252;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header__button:hover {
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #a4a4a4;
+}
+
+.header__button--sign-in {
+  background-color: cadetblue;
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+}
