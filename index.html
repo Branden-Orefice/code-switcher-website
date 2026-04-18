@@ -40,20 +40,23 @@
         <button class="header__button header__button--create">Create Account</button>
         <button class="header__button header__button--sign-in">Sign In</button>
       </div>
-      <div class="mobile-menu-icon">
-        <i class="fa-solid fa-bars-staggered">
-          <nav class="mobile__nav">
-            <a href="#" class="mobile__link">About</a>
-            <a href="#" class="mobile__link">Blog</a>
-            <a href="#" class="mobile__link">Pricing</a>
-            <a href="#" class="mobile__link">Changelog</a>
-            <a href="#" class="mobile__link">Templates</a>
-            <a href="#" class="mobile__link">Docs</a>
-            <a href="#" class="mobile__link">Discord</a>
+        <button class="header__mobile__icon">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      <div class="header__mobile-button">
+          <nav>
+              <ul class="header__mobile-link">
+                  <li><a href="#" class="mobile__link">About</a></li>
+                  <li><a href="#" class="mobile__link">Blog</a></li>
+                  <li><a href="#" class="mobile__link">Pricing</a></li>
+                  <li><a href="#" class="mobile__link">Changelog</a></li>
+                  <li><a href="#" class="mobile__link">Templates</a></li>
+                  <li><a href="#" class="mobile__link">Docs</a></li>
+                  <li><a href="#" class="mobile__link">Discord</a></li>
+              </ul>
             <button class="header__button mobile__button--create">Create Account</button>
             <button class="header__button mobile__button--sign-in">Sign In</button>
           </nav>
-        </i>
       </div>
     </div>
   </header>
@@ -236,5 +239,5 @@ public class APIController {
 </body>
 <script src="js/script.js"></script>
 <script src="js/stars.js"></script>
-
+<script src="js/mobile-ham.js"></script>
 </html>
