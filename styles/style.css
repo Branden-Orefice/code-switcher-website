@@ -131,7 +131,7 @@ body {
 .header__mobile__icon {
   position: absolute;
   z-index: 99;
-  right: 20px;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
